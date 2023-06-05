@@ -1,23 +1,231 @@
+body {
+    overflow-x: hidden;
+  }
 
 .contenedor-img-home {
+    width: 100vw;
+    height: 90vh;
+    background-image: url('Imgs/nube-blanca.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-img-contacto {
+    width: 100%;
+    height: 75vh;
+    background-image: url('Imgs/fondo-contacto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fondo-skills {
     position: relative;
 }
 
-.contenedor-img-home .fondo {
+.fondo-skills::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    background-image: url(Imgs/fondo-skills.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); 
+    z-index: -1; 
 }
 
-.contenedor-img-home .nube-blanca {
+.fondo-proyectos {
+    position: relative;
+    height: 90vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo-proyectos::before {
+    content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%; 
-    height: 50%; 
-    background-image: url('imgs/nube-blanca.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Imgs/fondo-proyectos.jpg);
+    background-size: cover;
     background-position: center;
-    z-index: 2;
+    filter: blur(8px); 
+    z-index: -1; 
+}
+
+.titulo-central {
+    font-family: "Nabla", sans-serif;
+    font-size: 6rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo-central {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    color: black;
+    font-family: "Oswald", sans-serif;
+    text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.fuente-titulo-proy {
+    font-family: "Nabla", sans-serif;
+    font-size: 10rem;
+    margin-bottom: 10px;
+}
+
+.fuente-lenguaje-proy {
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    color: black;
+    font-family: "Oswald", sans-serif;
+}
+
+.fuente-navbar {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+}
+
+.fuente-skills th {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+
+}
+
+.titulos {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bold;
+    color: black;
+    text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.5);
+    font-size: 5rem;
+    text-decoration: none;
+}
+
+.herramientas {
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+}
+
+.estilos-proyectos a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.titulo-proyecto {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    color: #252325;
+    font-size: 4rem;
+    text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.fecha-proyecto {
+    font-style: italic;
+    text-align: center;
+}
+
+.copy {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    filter: drop-shadow(-4px 4px 1px rgba(0, 0, 0, 0.5));
+}
+
+.fondo-proyecto {
+    width: 100%;
+    height: 85vh;
+    background-image: url('Imgs/maxim-berg-ANuuRuCRRAc-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-proy {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    color: #252325;
+    font-size: 4rem;
+    text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.parrafo-proy {
+    text-indent: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem !important;
+    text-align: justify;
+}
+
+.parrafo-sin-sangria {
+    text-indent: 0em !important;
+    font-size: 2rem !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.centrar-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.grupo-imgs {
+    display: flex;
+    flex-direction: row;
+}
+  
+.galeria-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galeria-img img {
+    width: 50%;
+}
+
+.entrada {
+    font-size: 1.5rem;
+}
+
+.galeria-img-col {
+    display: flex;
+    flex-direction: row;
+}
+
+.galeria-img-col img {
+    width: 50%;  
 }
