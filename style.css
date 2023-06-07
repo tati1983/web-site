@@ -77,7 +77,7 @@ body {
 }
 
 .subtitulo-central {
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 0.1rem;
     font-weight: bold;
     color: black;
@@ -88,26 +88,26 @@ body {
 
 .fuente-titulo-proy {
     font-family: "Nabla", sans-serif;
-    font-size: 10rem;
+    font-size: 8rem;
     margin-bottom: 10px;
 }
 
 .fuente-lenguaje-proy {
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 0.1rem;
     color: black;
     font-family: "Oswald", sans-serif;
 }
 
 .fuente-navbar {
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: bold;
     font-family: "Oswald", sans-serif;
 }
 
 .fuente-skills th {
     font-family: "Oswald", sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 
 }
 
@@ -116,14 +116,14 @@ body {
     font-weight: bold;
     color: black;
     text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.5);
-    font-size: 5rem;
+    font-size: 3rem;
     text-decoration: none;
 }
 
 .herramientas {
     color: black;
     font-family: "Oswald", sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .estilos-proyectos a {
@@ -135,7 +135,7 @@ body {
     font-family: "Oswald", sans-serif;
     font-weight: bold;
     color: #252325;
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -173,26 +173,26 @@ body {
     font-family: "Oswald", sans-serif;
     font-weight: bold;
     color: #252325;
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 li {
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: justify;
 }
 
 .parrafo-proy {
     text-indent: 3em;
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     text-align: justify;
 }
 
 .parrafo-sin-sangria {
     text-indent: 0em !important;
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -218,7 +218,7 @@ li {
 }
 
 .entrada {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .galeria-img-col {
@@ -229,3 +229,87 @@ li {
 .galeria-img-col img {
     width: 50%;  
 }
+
+@media (max-width: 425px) {
+
+    .titulo-central {
+      font-size: 2.5rem;
+    }
+  
+    .subtitulo-central {
+      font-size: 0.8rem;
+    }
+
+    .parrafo-proy {
+        font-size: 1rem !important;
+    }
+
+    .titulos {
+        font-size: 2rem;
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .grupo-imgs {
+        flex-direction: column !important;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    .iconos a img {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    
+    .titulo-central {
+        font-size: 3.5rem;
+      }
+    
+    .subtitulo-central {
+    font-size: 1.5rem;
+    }
+
+    .parrafo-proy {
+    font-size: 1.2rem !important;
+    }
+
+    .titulos {
+        font-size: 2.5rem;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .grupo-imgs {
+        flex-direction: column !important;
+    }
+
+    li {
+        font-size: 1.2rem;
+    }
+
+    .iconos a img {
+        width: 40px;
+        height: 40px;
+    }
+
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .titulo-central {
+        font-size: 4.5rem;
+      }
+    
+      .subtitulo-central {
+        font-size: 1.8rem;
+      }
+
+      .grupo-imgs {
+        flex-direction: column !important;
+    }
+  }
