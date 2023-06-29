@@ -71,9 +71,11 @@ body {
 }
 
 .titulo-central {
-    font-family: "Nabla", sans-serif;
-    font-size: 6rem;
     margin-bottom: 10px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 5rem;
+    color:black;
+    text-shadow: -15px 15px 4px rgba(0, 0, 0, 0.5);
 }
 
 .subtitulo-central {
@@ -228,6 +230,41 @@ li {
 
 .galeria-img-col img {
     width: 50%;  
+}
+
+.boton-img{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-img img{
+    width: 8rem;
+}
+
+.boton-img img:hover{
+    transform: scale(1.5); 
+}
+
+#btnVolverArriba {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+#btnVolverArriba.show {
+    display: block;
+}
+
+.dedo {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    width: 5rem !important;
+    height: 5rem !important;
 }
 
 @media (max-width: 425px) {
